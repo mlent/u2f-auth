@@ -5,19 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "pretest": "npm run lint",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mlent/u2f-auth.git"
   },
-  "keywords": [
-    "u2f",
-    "auth",
-    "authentication",
-    "yubikeys"
-  ],
+  "keywords": ["u2f", "auth", "authentication", "yubikeys"],
   "author": "Monica Lent",
   "license": "ISC",
   "bugs": {
@@ -34,11 +29,7 @@
     "typescript": "^2.6.2"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
     "transform": {
       "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
