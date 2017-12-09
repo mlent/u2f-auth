@@ -1,0 +1,25 @@
+{
+  "name": "u2f-auth",
+  "version": "1.0.0",
+  "description": "Javascript module for interacting with U2F devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlent/u2f-auth.git"
+  },
+  "keywords": [
+    "u2f",
+    "auth",
+    "authentication",
+    "yubikeys"
+  ],
+  "author": "Monica Lent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlent/u2f-auth/issues"
+  },
+  "homepage": "https://github.com/mlent/u2f-auth#readme"
+}
