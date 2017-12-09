@@ -4,6 +4,8 @@
   "description": "Javascript module for interacting with U2F devices",
   "main": "dist/index.js",
   "scripts": {
+    "build":
+      "tsc ./src/index.ts --outDir dist && rollup dist/index.js --output.format iife --output.file dist/bundle.js",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -24,6 +26,7 @@
     "@types/jasmine": "^2.8.2",
     "jest": "^21.2.1",
     "prettier": "^1.9.1",
+    "rollup": "^0.52.1",
     "ts-jest": "^21.2.4",
     "tslint-config-prettier": "^1.6.0",
     "typescript": "^2.6.2"
