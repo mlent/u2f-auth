@@ -2,9 +2,11 @@
   "name": "u2f-auth",
   "version": "1.0.0",
   "description": "Javascript module for interacting with U2F devices",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "npm test"
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "pretest": "npm run lint",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,25 @@
   "bugs": {
     "url": "https://github.com/mlent/u2f-auth/issues"
   },
-  "homepage": "https://github.com/mlent/u2f-auth#readme"
+  "homepage": "https://github.com/mlent/u2f-auth#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^2.8.2",
+    "jest": "^21.2.1",
+    "prettier": "^1.9.1",
+    "ts-jest": "^21.2.4",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$"
+  }
 }
